@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: #fafafa;
+}
+
+
+
+main {
+    text-align: center;
+}
+
+
+
+/* header */
+
+main header {
+    padding-top: 20px;
+}
+
+main header h1 {
+
+    color: #3B3D4E;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+main header .light {
+
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #A1A0A4;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+main header p {
+    color: hsl(229, 6%, 66%);
+    padding-top: 15px;
+    font-weight: 400;
+}
+
+
+
+/* cards same styles */
+
+#cards {
+    justify-content: center;
+    margin-top: 3%;
+    align-items: center;
+}
+
+
+.card1 {
+    background-color: #FFF;
+    height: 250px;
+    text-align: left;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 30px 40px;
+    margin: 10px;
+    transition: 0.4s box-shadow;
+    -webkit-transition: 0.4s box-shadow;
+    -moz-transition: 0.4s box-shadow;
+    -ms-transition: 0.4s box-shadow;
+    -o-transition: 0.4s box-shadow;
+    box-shadow: 4px 8px 10px 5px #e4e6e9;
+    cursor: pointer;
+}
+
+.card1:hover {
+    box-shadow: 4px 8px 10px 5px #d5d7db;
+}
+
+#cards section h2 {
+
+    color: #3B3D4E;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#cards section p {
+
+    color: hsl(229, 6%, 66%);
+    font-size: 14px;
+}
+
+.div-img {
+    
+    text-align: right;
+    margin-top: 50px;
+}
+
+
+
+/* Supervisor card */
+
+#Supervisor {
+    border-top: 5px solid hsl(180, 62%, 55%);
+    max-width: 339px;
+}
+
+
+/* team builder/karma container */ 
+
+#both {
+    max-width: 388px;
+}
+
+
+/* Team Builder */
+
+#Team-Builder {
+    border-top: 5px solid hsl(0, 78%, 62%);
+    margin-bottom: 20px;
+    
+}
+
+/* Karma */
+
+#Karma {
+    border-top: 5px solid hsl(34, 97%, 64%);
+    
+}
+
+/* Calculator */
+
+#Calculator {
+    border-top: 5px solid hsl(212, 86%, 64%);
+    max-width: 339px;
+}
+
+
+.show_phone {
+    display: none;
+}
+
+
+/* @media */
+
+
+@media (min-width: 716px) and (max-width: 991.9px) {
+    
+    #cards {
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3%;
+        align-items: center;
+    }
+
+
+    .div-img {
+        margin-top: 74px;
+    }
+
+    #Supervisor {
+        max-width: 80%;
+    }
+
+    #both {
+        max-width: 85.8%;
+    }
+
+
+    #Calculator {
+    
+        max-width: 80%;
+    }
+}
+
+
+@media (max-width: 715.9px) {
+
+    .none {
+        display: none;
+    }
+    .show_phone {
+        display: block;
+    }
+
+
+    main header h1 {
+        font-size: 24px;
+    }
+
+    main header .light {
+        font-size: 26px;
+    }
+}
